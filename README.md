@@ -35,6 +35,7 @@ The system follows a Retrieval-Augmented Generation (RAG) pipeline.
 ![Application Interface](assets/system-architecture.png)
 
 ---
+## DEMO
 ![Application Interface](assets/demo.png)
 
 ## Tech Stack
