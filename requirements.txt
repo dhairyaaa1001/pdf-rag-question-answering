@@ -1,0 +1,11 @@
+langchain-community==0.3.27
+streamlit==1.47.1
+pypdf==5.9.0
+langchain==0.3.27
+sentence-transformers==5.0.0
+faiss-cpu==1.11.0.post1
+transformers==4.54.1
+torch==2.7.1
+huggingface-hub==0.34.3
+pandas==2.3.1
+scikit-learn==1.7.1
