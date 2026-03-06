@@ -20,42 +20,33 @@ Pipeline:
 6. Provide retrieved context to the LLM
 7. Generate a grounded answer
 
+## Key Features
+
+- Retrieval-Augmented Generation pipeline for document question answering
+- Semantic search using sentence embeddings
+- Efficient vector indexing with FAISS
+- Context-aware answer generation using FLAN-T5
+- Interactive Streamlit web interface
+- Modular architecture supporting different embedding and LLM models
 ---
+## System Architecture
 
-## Architecture
+The system follows a Retrieval-Augmented Generation (RAG) pipeline.
 
-```
-PDF Document
-     │
-     ▼
-Text Extraction
-     │
-     ▼
-Document Chunking
-     │
-     ▼
-Embedding Generation (MiniLM)
-     │
-     ▼
-FAISS Vector Store
-     │
-     ▼
-User Question
-     │
-     ▼
-Similarity Search
-     │
-     ▼
-Retrieved Context
-     │
-     ▼
-FLAN-T5
-     │
-     ▼
-Generated Answer
-```
+PDF → Text Extraction → Chunking → Embeddings → Vector Index (FAISS)
+                                                     ↓
+                                                User Query
+                                                     ↓
+                                            Similarity Retrieval
+                                                     ↓
+                                               Context Assembly
+                                                     ↓
+                                                 FLAN-T5
+                                                     ↓
+                                                   Answer
 
 ---
+![Application Interface](assets/demo.png)
 
 ## Tech Stack
 
