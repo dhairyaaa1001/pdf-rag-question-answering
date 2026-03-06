@@ -32,18 +32,7 @@ Pipeline:
 ## System Architecture
 
 The system follows a Retrieval-Augmented Generation (RAG) pipeline.
-
-PDF → Text Extraction → Chunking → Embeddings → Vector Index (FAISS)
-                                                     ↓
-                                                User Query
-                                                     ↓
-                                            Similarity Retrieval
-                                                     ↓
-                                               Context Assembly
-                                                     ↓
-                                                 FLAN-T5
-                                                     ↓
-                                                   Answer
+![Application Interface](assets/system-architecture.png)
 
 ---
 ![Application Interface](assets/demo.png)
